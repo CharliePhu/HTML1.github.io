@@ -1,0 +1,83 @@
+body {
+  background-image: url("astronaut.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body::before {
+  content: "";
+  background: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.alignbutton {
+  text-align: center;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
+
+button {
+  position: relative;
+  color: white;
+  font-family: poppins;
+  opacity: 1;
+  background-color: transparent;
+  border-color: white;
+  border: 3px solid white;
+  transition: 0.2s;
+  z-index: 2;
+  top: 85vh;
+  font-size: 25px;
+  padding: 8px 40px;
+}
+
+h1 {
+  color: white;
+  font-family: poppins;
+  opacity: 1;
+  position: fixed;
+  top: -20px;
+  z-index: 2;
+}
+
+h2 {
+  color: white;
+  font-family: poppins;
+  opacity: 1;
+  position: relative;
+  top: 10vh;
+  text-align: center;
+  z-index: 2;
+  font-size: 50px;
+}
+
+p {
+  color: white;
+  font-size: 25px;
+  width: 50vh;
+  margin: auto;
+  font-family: poppins;
+  opacity: 1;
+  text-align: center;
+  position: relative;
+  top: 10vh;
+  z-index: 2;
+}
+
+
+
+@font-face {
+  font-family: poppins;
+  src: url(Poppins-ExtraBold.ttf);
+}
